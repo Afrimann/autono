@@ -1,0 +1,143 @@
+/* HEADER STYLES */
+.header {
+  background: transparent;
+  width: 100%;
+  height: 60px;
+  width: 100%;
+}
+
+.scrolled {
+  background-color: white;
+}
+
+.header > div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > div > span {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.header > div > div > ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header > div > div > ul > li > a {
+  font-size: 18px;
+}
+
+.subs_btn {
+  background-color: #000;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.big_intro_text {
+  font-size: 40px;
+  color: #000;
+  font-weight: 200;
+}
+
+.line_container {
+  height: auto;
+  display: flex;
+}
+
+.line {
+  border: 1px solid #b4b4b4;
+  height: 100%;
+}
+
+.line_child {
+  border: 2px solid #ffffff;
+  height: 30%;
+  border-radius: 7px;
+  margin-top: 100px;
+}
+
+.service_list {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 100%;
+}
+
+.service_card_content {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 2px solid yellow;
+}
+
+.service_card_content_head {
+  font-size: 40px;
+  font-weight: 100;
+  max-width: 40%;
+  line-height: 1.5;
+}
+
+.service_card_content_para {
+  font-size: 20px;
+  max-width: 70%;
+  line-height: 1.6;
+}
+
+.service_card_content > button {
+  width: 180px;
+  border: 1ps solid black;
+  padding: 15px 20px;
+  background: transparent;
+}
+
+.service_card_image_container {
+  flex: 1 1 0;
+  height: 100%;
+}
+
+.service_card_image {
+  width: 100%;
+  height: 100%;
+}
+
+.auto_driving {
+  padding-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.real_time {
+  /* padding-right: 40px; */
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.perception {
+  padding-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
