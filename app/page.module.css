@@ -117,6 +117,7 @@
   height: 100%;
   width: 100%;
   /* transform: scale(1.5); */
+  transition: transform fadeIn ease-in;
 }
 
 
@@ -157,6 +158,70 @@
   font-size: 30px;
   line-height: 1.6;
 }
+
+/* why autono? */
+.why_autono{
+  height: 100vh;
+  width: 100%;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.why_autono_content{
+  background-color: #000;
+  color: white;
+  width: 40%;
+  padding: 20px 40px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.autono_line_container{
+  height: 100%;
+  display: flex;
+}
+.autono_line{
+  border: 1px solid #b4b4b4;
+  height: 100%;
+}
+.autono_line_child{
+  border: 2px solid #ffffff;
+  height: 30%;
+  border-radius: 7px;
+  margin-top: 100px;
+
+}
+
+.why_autono_content > div > h2{
+  font-size: 17px;
+  font-weight: 100;
+}
+.why_autono_content_intro{
+  padding-top: 30px;
+  /* background-color: red; */
+  font-size: 25px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+.why_autono_content_main_text{
+  padding-top: 30px;
+  font-size: 19px;
+  max-width: 90%;
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.why_autono_content > button{
+  border-width: 1px;
+  border-color: white;
+}
+
+/* NUMBERS */
+.numbers{
+  /* height: 100vh; */
+  width: 100%;
+}
 /* Enable hover only on non-touch devices */
 @media (hover:hover) and (pointer:fine) {
 }
@@ -167,5 +232,16 @@
 @media (prefers-color-scheme:dark) {
   .logo {
     filter: invert();
+  }
+}
+
+
+
+@keyframes fadeIn{
+  from{
+    transform: translateX(-100);
+  }
+  to{
+    transform:  translateX(0);
   }
 }

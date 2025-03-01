@@ -22,8 +22,8 @@ export default function Header () {
   }, [])
   return (
     <header
-      className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}
-      id='header'
+      className={`${styles.header} `}
+      id=''
     >
       {/* CONTAINER */}
       <div>

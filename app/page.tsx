@@ -1,5 +1,5 @@
 // this will carry the whole sections by calling the components one after the other as needed
-import { Header, Services } from './components'
+import { Header, Numbers, Services } from './components'
 import LineStyle from './components/LineStyle'
 import styles from './page.module.css'
 import Image from 'next/image'
@@ -72,6 +72,34 @@ export default function LandingPage () {
         <div>
           <Services />
         </div>
+      </section>
+
+      {/* why autono? */}
+      <section className={styles.why_autono}>
+        <div className={styles.why_autono_content}>
+          <div className={styles.autono_line_container}>
+            <span className={styles.autono_line}></span>
+            <span className={styles.autono_line_child}></span>
+          </div>
+          <div>
+            <h2>WHY AUTONO</h2>
+            <p className={styles.why_autono_content_intro}>
+              A different approach,using a new method of manufacturing.
+            </p>
+            <p className={styles.why_autono_content_main_text}>
+              I'm a paragraph. Click here to add your own text and edit me. It’s
+              easy. Just click “Edit Text” or double click me to add your own
+              content and make changes to the font. I’m a great place for you to
+              tell a story and let your users know a little more about you.
+            </p>
+            <button className='main_button'>Read More</button>
+          </div>
+        </div>
+      </section>
+
+      {/* autono in numbers */}
+      <section className={styles.numbers}>
+        <Numbers />
       </section>
     </main>
   )
