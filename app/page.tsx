@@ -25,7 +25,7 @@ export default function LandingPage () {
         </div>
       </section>
 
-      <section className={styles.empty}></section>
+      {/* <section className={styles.empty}></section> */}
       {/* vision section */}
       <section className={styles.vision}>
         <div className={styles.col_1}>

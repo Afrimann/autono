@@ -2,31 +2,67 @@
 'use client'
 import styles from './components.module.css'
 import { useEffect, useState } from 'react'
+import { FaHamburger } from 'react-icons/fa';
 
 export default function Header () {
-  const [scrolled, setScrolled] = useState<boolean>(false)
+  const [showHeader, setShowHeader] = useState(true);
+  const [bgWhite, setBgWhite] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY
-      setScrolled(offset > 50) // Adjust the scroll position threshold as needed
-    }
+      const currentScrollY = window.scrollY;
 
-    window.addEventListener('scroll', handleScroll)
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setShowHeader(false);
+        if (currentScrollY < 100) {
+          setBgWhite(true); // Show white bg for a short distance
+        } else {
+          setBgWhite(false); // Remove white bg after scrolling further
+        }
+      } else {
+        // Scrolling up
+        setShowHeader(true);
+        if (currentScrollY > 50) {
+          setBgWhite(true);
+        } else {
+          setBgWhite(false);
+        }
+      }
 
-    // Initial check in case the user is already scrolled past the threshold when the component mounts
-    handleScroll()
+      if (currentScrollY === 0) {
+        setBgWhite(false); // Reset at top
+      }
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
     <header
       className={`${styles.header} `}
       id=''
+      style={{
+        position: "fixed",
+        left:0,
+        top: showHeader ? 0 : "-80px",
+        width: "100%",
+        height: "80px",
+        backgroundColor: bgWhite ? "white" : '',
+        transition: "top 0.3s ease, background-color 0.3s ease",
+        boxShadow: bgWhite ? "0px 2px 10px rgba(0, 0, 0, 0.1)" : "none",
+        zIndex: '20'
+      }}
+
     >
       {/* CONTAINER */}
-      <div>
+      <div
+        style={{display: `${!showHeader ? 'none' : ''}`}}
+      >
         <span>AUTONO</span>
         {/* nav-items */}
         <div>
@@ -41,6 +77,7 @@ export default function Header () {
               <a href='#'>Careers</a>
             </li>
             <button className={`${styles.subs_btn} `}>Subscribe</button>
+            <span className={styles.hamburger} ><FaHamburger style={{fontSize: '20px'}}/></span>
           </ul>
         </div>
       </div>
