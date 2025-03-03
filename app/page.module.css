@@ -1,3 +1,77 @@
+/* Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide In from Left */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide In from Right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide In from Top */
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide In from Bottom */
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Jump In */
+@keyframes jumpIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -48,6 +122,7 @@
   max-width: 70%;
   margin: auto auto;
   padding-top: 40px;
+  animation: jumpIn 1s ease-in-out;
 }
 
 .intro_para {
@@ -55,6 +130,7 @@
   font-size: 30px;
   padding-top: 20px;
   font-weight: 100;
+  animation: jumpIn .5s ease-in-out;
 }
 
 .empty {
@@ -199,7 +275,6 @@
   /* margin-top: 100px; */
 }
 
-
 .service_col {
   padding-top: 40px;
   padding-left: 80px;
@@ -220,7 +295,7 @@
 
 /* why autono? */
 .why_autono {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   padding-left: 80px;
   display: flex;
@@ -228,6 +303,7 @@
 }
 
 .why_autono_content {
+  /* height: 100%;   */
   background-color: #000;
   color: white;
   width: 40%;
@@ -240,7 +316,7 @@
 }
 
 .autono_line_container {
-  height: 100%;
+  height: 350px;
   display: flex;
 }
 
@@ -281,30 +357,46 @@
   border-width: 1px;
   border-color: white;
 }
+
 @media screen and (max-width:600px) {
-  .service_col{
+  .service_col {
     padding-left: 30px;
     gap: 26.5px;
   }
-  .services_main_content > p{
+  
+  .services_main_content > p {
     max-width: 90%;
     font-size: 25px;
   }
-  .why_autono{
+  
+  .why_autono {
     padding-left: 30px;
   }
   
+  .why_autono_content {
+    width: 90%;
+  }
+  
+  .why_autono_content_intro {
+    padding-right: 11px;
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  
+  .why_autono_content_main_text {
+    font-size: 17px;
+    line-height: 1.4;
+  }
 }
 /* NUMBERS */
 .numbers {
   /* height: 100vh; */
   width: 100%;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover:hover) and (pointer:fine) {
-}
-
-@media (max-width:600px) {
 }
 
 @media (prefers-color-scheme:dark) {

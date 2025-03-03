@@ -1,25 +1,41 @@
 // this will carry the whole sections by calling the components one after the other as needed
+'use client'
+import { useEffect, useState } from 'react'
 import { Header, Numbers, Services } from './components'
 import LineStyle from './components/LineStyle'
 import styles from './page.module.css'
 import Image from 'next/image'
+import MobileNav from './components/MobileNavigationBar'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function LandingPage () {
+  useEffect(() => {
+    AOS.init({ duration: 600, once: false });
+    AOS.refresh()
+  }, []);
+  const [openMobile, setOpenMobile] = useState<boolean>(false)
+  const closeMobile = () => setOpenMobile(false)
+  const openMobileNav = () => setOpenMobile(true)
+// console.log(closeMobile)
   return (
+    <>
+    {openMobile && <MobileNav closeMobile={closeMobile}/>}
     <main className={styles.page}>
       {/* hero section */}
       <section className={styles.hero}>
         {/* header */}
         <div className={styles._header}>
-          <Header />
+          <Header openMobile={openMobileNav}/>
         </div>
         <div className={styles.overlay}></div>
         {/* main-content */}
 
         <div className={styles.after_overlay}>
-          <h1 className={styles.big_intro_text}>
+          <h1 data-aos='zoom-in' className={styles.big_intro_text}>
             THE FUTURE OF MOBILITY IS HERE
           </h1>
-          <p className={styles.intro_para}>
+          <p data-aos='zoom-in' data-aos-delay= '100' className={styles.intro_para}>
             Discover the safest self-driving experience with Autono.
           </p>
         </div>
@@ -32,10 +48,10 @@ export default function LandingPage () {
           {/* line */}
           <LineStyle />
           <div className={styles.vision_content}>
-            <h2 className={styles.content_head}>VISION</h2>
+            <h2 className={styles.content_head} data-aos= 'fade-in'>VISION</h2>
             <div>
-              <p>We’re Changing the Way the World Thinks About Cars</p>
-              <p>
+              <p data-aos='fade-up'>We’re Changing the Way the World Thinks About Cars</p>
+              <p data-aos='fade-up'>
                 I'm a paragraph. Click here to add your own text and edit me.
                 It’s easy. Just click “Edit Text” or double click me to add your
                 own content and make changes to the font. I’m a great place for
@@ -46,7 +62,7 @@ export default function LandingPage () {
           </div>
         </div>
         {/* image */}
-        <div className={styles.col_2}>
+        <div className={styles.col_2} data-aos='slide-right'>
           <Image
             src='/car.avif'
             alt='a car'
@@ -65,8 +81,8 @@ export default function LandingPage () {
           </div>
 
           <div className={styles.services_main_content}>
-            <h2>SERVICES</h2>
-            <p>We Deliver Exceptional Products and Services Around the World</p>
+            <h2 data-aos='fade-in'>SERVICES</h2>
+            <p data-aos='fade-up' data-aos-delay='100'>We Deliver Exceptional Products and Services Around the World</p>
           </div>
         </div>
         <div>
@@ -102,5 +118,6 @@ export default function LandingPage () {
         <Numbers />
       </section>
     </main>
+    </>
   )
 }
