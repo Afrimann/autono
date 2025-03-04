@@ -1,0 +1,110 @@
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 160px;
+  background-color: white;
+}
+
+.footer h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center;
+  justify-content: center; */
+  padding-top: 100px;
+}
+
+.autono_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  flex: 1 1 0;
+}
+
+.autono_form {
+  flex: 1 1 0;
+}
+
+.autono_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.autono_form form .form_field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form_field > div input {
+  padding: 15px 10px 15px 10px;
+  width: 200px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  /* border: 1px; */
+}
+
+.form_field > div input:focus {
+  outline: none;
+}
+
+.form_field > div button {
+  padding: 15px 20px 15px 20px;
+  border: none;
+  background-color: #000;
+  color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.autono_form form div:nth-of-type(2) {
+  display: flex;
+  gap: 10px;
+}
+
+.credit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 160px;
+}
+
+.credit > div:nth-of-type(2) {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+@media screen and (max-width:600px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .footer h2{
+    font-size: 20px;
+  }
+  .footer > div{
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 40px;
+  }
+  .autono_info{
+    gap: 30px;
+  }
+  .autono_form form{
+    gap: 20px;
+  }
+  .credit{
+    flex-direction: column;
+    padding-right: 80px;
+    align-items: flex-start;
+  }
+}
