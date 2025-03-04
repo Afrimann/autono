@@ -2,7 +2,6 @@
 'use client'
 import styles from './components.module.css'
 import { useEffect, useState } from 'react'
-import { FaHamburger } from 'react-icons/fa'
 import { FaBars } from 'react-icons/fa'
 
 interface Props {

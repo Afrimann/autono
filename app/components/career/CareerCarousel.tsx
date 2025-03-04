@@ -42,8 +42,8 @@ export default function CareerCarousel () {
     }, 10000)
 
     return () => clearInterval(interval)
-  }, [])
-
+  }, [CarouselDetails.length])
+// check if it works
   return (
     <div className={styles.carousel} key={animationKey}>
       <h2 key={carouselInView} className={styles.fade_in}>

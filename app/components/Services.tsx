@@ -1,5 +1,4 @@
 import styles from './components.module.css'
-import Image from 'next/image'
 import ServiceCard from './ServiceCard'
 
 // properly arranges and sets all list of services

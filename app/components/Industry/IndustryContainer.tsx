@@ -18,9 +18,9 @@ export default function Industry () {
           <p data-aos='fade-up'>
             Click here to add your own content and customize the text. This is a
             great place to tell a story about your company and let your users
-            know a little more about the company's history, the team's
-            background, or any other information you'd like to share. Just click
-            "Edit Text" to get started.
+            know a little more about the company&apos;s history, the team&apos;s
+            background, or any other information you&apos;d like to share. Just click
+            &quot;Edit Text&quot; to get started.
           </p>
         </div>
       </div>
