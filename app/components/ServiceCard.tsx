@@ -26,11 +26,19 @@ export default function ServiceCard ({
     //     >
     <>
       <div className={styles.service_card_content}>
-        <h2 data-aos='fade-up' className={styles.service_card_content_head}>{title}</h2>
-        <p data-aos='fade-up' className={styles.service_card_content_para}>{para}</p>
+        <h2 data-aos='fade-up' className={styles.service_card_content_head}>
+          {title}
+        </h2>
+        <p data-aos='fade-up' className={styles.service_card_content_para}>
+          {para}
+        </p>
         <button>{btnText}</button>
       </div>
-      <div className={styles.service_card_image_container} data-aos='slide-right' data-aelay='200'>
+      <div
+        className={styles.service_card_image_container}
+        data-aos='slide-right'
+        data-aelay='200'
+      >
         <Image
           src={image}
           alt='car'

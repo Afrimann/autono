@@ -123,6 +123,7 @@
   margin: auto auto;
   padding-top: 40px;
   animation: jumpIn 1s ease-in-out;
+  font-weight: 300;
 }
 
 .intro_para {
@@ -131,6 +132,7 @@
   padding-top: 20px;
   font-weight: 100;
   animation: jumpIn .5s ease-in-out;
+  font-weight: 250;
 }
 
 .empty {
@@ -213,6 +215,7 @@
 
 .content_head {
   color: white;
+  font-weight: 200;
 }
 
 .col_2 {
@@ -285,6 +288,9 @@
 .services_main_content {
   display: block;
 }
+.services_main_content h2{
+  font-weight: 300;
+}
 
 .services_main_content > p {
   margin-top: 40px;
@@ -313,11 +319,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .autono_line_container {
-  height: 350px;
+  height: 500px;
   display: flex;
+
 }
 
 .autono_line {
@@ -327,9 +336,9 @@
 
 .autono_line_child {
   border: 2px solid #ffffff;
-  height: 30%;
+  height: 20%;
   border-radius: 7px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .why_autono_content > div > h2 {

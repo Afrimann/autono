@@ -65,18 +65,18 @@ export default function Header ({ openMobile }: Props) {
     >
       {/* CONTAINER */}
       <div style={{ display: `${!showHeader ? 'none' : ''}` }}>
-        <span>AUTONO</span>
+        <span><a href="#hero">AUTONO</a></span>
         {/* nav-items */}
         <div>
           <ul>
             <li>
-              <a href='#'>Technology</a>
+              <a href='#technology'>Technology</a>
             </li>
             <li>
-              <a href='#'>About</a>
+              <a href='#about'>About</a>
             </li>
             <li>
-              <a href='#'>Careers</a>
+              <a href='#careers'>Careers</a>
             </li>
             <button className={`${styles.subs_btn} `}>Subscribe</button>
             <span className={styles.hamburger}>

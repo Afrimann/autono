@@ -26,14 +26,15 @@ export default function MobileNav ({ closeMobile }: Props) {
           fontSize: '20px',
           letterSpacing: '2px'
         }}
+        onClick={closeMobile}
       >
-        AUTONO
+        <a href="#hero">AUTONO</a>
       </span>
 
       <ul>
-        <li>Technology</li>
-        <li>About</li>
-        <li>Careers</li>
+        <li onClick={closeMobile}><a href="#technology">Technology</a></li>
+        <li onClick={closeMobile}><a href="#about">About</a></li>
+        <li onClick={closeMobile}><a href="#careers">Careers</a></li>
         <span>Get Started</span>
       </ul>
     </nav>
