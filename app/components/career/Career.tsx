@@ -1,5 +1,4 @@
 import styles from './career.module.css'
-import Image from 'next/image'
 import CareerCarousel from './CareerCarousel'
 export default function Career () {
   return (
