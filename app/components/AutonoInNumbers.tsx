@@ -31,12 +31,12 @@ export default function Numbers () {
       <div className={styles.num_display}>
         {numbers.map((number, index) => (
           <div className={styles.num_container} key={index}>
-            <h2>{number.number}</h2>
+            <h2 style={{color: 'black', fontWeight: '400'}}>{number.number}</h2>
             <div className={styles.num_div_line}>
               <div></div>
               <div data-aos='custom-slide' data-aos-duration='2000'></div>
             </div>
-            <h2>{number.title}</h2>
+            <h2 style={{color: 'black', fontWeight: '200'}}>{number.title}</h2>
           </div>
         ))}
       </div>
