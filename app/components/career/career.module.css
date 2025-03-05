@@ -186,6 +186,8 @@
   .carousel {
     padding-left: 40px;
     padding-right: 40px;
+    width: 300px;
+    
   }
   
   .carousel h2 {
