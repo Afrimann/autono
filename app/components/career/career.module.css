@@ -147,37 +147,53 @@
   animation: fadeIn 1s ease-in;
 }
 
-@media screen and (max-width: 600px){
-  .career_container{
+@media screen and (max-width:600px) {
+  .career_container {
     flex-direction: column;
     gap: 80px;
   }
-  .career_carousel{
+  
+  .career_carousel {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .career_content_box{
+  
+  .career_content_box {
     gap: 20px;
     padding-left: 40px;
     padding-right: 40px;
   }
-  .career_content h2{
+  
+  .career_content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .career_content h2 {
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: 400;
   }
-  .career_content p{
+  
+  .career_content p {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 40px;
     padding-right: 40px;
     font-weight: 400;
   }
-  .carousel h2{
+  
+  .carousel {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .carousel h2 {
     font-size: 18px;
     font-weight: 500;
   }
-  .indicator{
+  
+  .indicator {
     height: 10px;
     width: 10px;
   }
