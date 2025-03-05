@@ -347,7 +347,8 @@
 
 .why_autono_content > div > h2 {
   font-size: 17px;
-  font-weight: 100;
+  font-weight: 300;
+  color: white;
 }
 
 .why_autono_content_intro {
@@ -383,11 +384,12 @@
   }
   
   .why_autono {
-    padding-left: 30px;
+    padding-left: 20px;
   }
   
   .why_autono_content {
     width: 90%;
+    padding: 20px 30px;
   }
   
   .why_autono_content_intro {

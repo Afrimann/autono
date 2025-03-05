@@ -344,6 +344,7 @@
   
   .num_display {
     gap: 40px;
+    padding: 0 40px;
     /* background-color: red; */
   }
 }
