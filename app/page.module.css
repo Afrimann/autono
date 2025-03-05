@@ -123,16 +123,18 @@
   margin: auto auto;
   padding-top: 40px;
   animation: jumpIn 1s ease-in-out;
-  font-weight: 300;
+  font-weight: 500;
+  color: black;
 }
 
 .intro_para {
   text-align: center;
   font-size: 30px;
   padding-top: 20px;
-  font-weight: 100;
+  font-weight: 300;
   animation: jumpIn .5s ease-in-out;
   font-weight: 250;
+  color: black;
 }
 
 .empty {
@@ -248,7 +250,7 @@
   }
   
   .vision_content > div > p:last-child {
-    max-width: 90%;
+    max-width: 100%;
     font-size: 18px;
   }
 }
@@ -289,7 +291,8 @@
   display: block;
 }
 .services_main_content h2{
-  font-weight: 300;
+  font-weight: 400;
+  color: black;
 }
 
 .services_main_content > p {
@@ -297,6 +300,7 @@
   max-width: 40%;
   font-size: 30px;
   line-height: 1.6;
+  color: black;
 }
 
 /* why autono? */
@@ -389,13 +393,15 @@
   .why_autono_content_intro {
     padding-right: 11px;
     max-width: 100%;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.4;
   }
   
   .why_autono_content_main_text {
     font-size: 17px;
     line-height: 1.4;
+    max-width: 100%;
+
   }
 }
 /* NUMBERS */

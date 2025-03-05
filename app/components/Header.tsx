@@ -80,7 +80,7 @@ export default function Header ({ openMobile }: Props) {
             <button className={`${styles.subs_btn} `}>Subscribe</button>
             <span className={styles.hamburger}>
               <FaBars
-                style={{ fontSize: '20px', cursor: 'pointer' }}
+                style={{ fontSize: '20px', cursor: 'pointer', color: 'black' }}
                 onClick={openMobile}
               />
             </span>

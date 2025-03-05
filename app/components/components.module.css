@@ -49,6 +49,7 @@
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 3px;
+  color: black;
 }
 
 .header > div > div > ul {
@@ -156,12 +157,14 @@
   max-width: 40%;
   line-height: 1.5;
   font-weight: 300;
+  color: black;
 }
 
 .service_card_content_para {
   font-size: 20px;
   max-width: 70%;
   line-height: 1.6;
+  color: black;
 }
 
 .service_card_content > button {
@@ -169,6 +172,7 @@
   border: 1ps solid black;
   padding: 15px 20px;
   background: transparent;
+  color: black;
 }
 
 .service_card_image_container {
@@ -327,6 +331,8 @@
 @media (max-width:600px) {
   .numbers {
     flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
     /* align-items: flex-start; */
   }
   

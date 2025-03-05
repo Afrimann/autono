@@ -14,7 +14,8 @@ export default function MobileNav ({ closeMobile }: Props) {
           fontSize: '20px',
           position: 'absolute',
           top: '30px',
-          right: '20px'
+          right: '20px',
+          color: 'black'
         }}
         onClick={closeMobile}
       />
@@ -28,14 +29,14 @@ export default function MobileNav ({ closeMobile }: Props) {
         }}
         onClick={closeMobile}
       >
-        <a href="#hero">AUTONO</a>
+        <a href="#hero" style={{color: 'black'}}>AUTONO</a>
       </span>
 
       <ul>
-        <li onClick={closeMobile}><a href="#technology">Technology</a></li>
-        <li onClick={closeMobile}><a href="#about">About</a></li>
-        <li onClick={closeMobile}><a href="#careers">Careers</a></li>
-        <span>Get Started</span>
+        <li onClick={closeMobile}><a href="#technology" style={{color: 'black'}}>Technology</a></li>
+        <li onClick={closeMobile}><a href="#about" style={{color: 'black'}}>About</a></li>
+        <li onClick={closeMobile}><a href="#careers" style={{color: 'black'}}>Careers</a></li>
+        <span style={{color: 'black'}}>Get Started</span>
       </ul>
     </nav>
   )

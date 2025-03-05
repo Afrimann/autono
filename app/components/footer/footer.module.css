@@ -9,6 +9,7 @@
   font-size: 25px;
   letter-spacing: 2px;
   color: #000;
+  font-weight: 400;
 }
 
 .footer > div {
@@ -47,6 +48,7 @@
   width: 200px;
   border-radius: 10px;
   letter-spacing: 1px;
+  background-color: white;
   /* border: 1px; */
 }
 
@@ -61,6 +63,7 @@
   color: white;
   border-radius: 10px;
   margin-left: 10px;
+  font-weight: 500;
 }
 
 .autono_form form div:nth-of-type(2) {
@@ -106,5 +109,6 @@
     flex-direction: column;
     padding-right: 80px;
     align-items: flex-start;
+    color: black;
   }
 }

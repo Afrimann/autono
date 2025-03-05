@@ -12,24 +12,24 @@ export default function Footer () {
       <div>
         <div className={styles.autono_info}>
           <span>
-            <a href='#'>Technology</a>
+            <a href='#' style={{color: 'black'}}>Technology</a>
           </span>
           <span>
-            <a href='#'>About</a>
+            <a href='#' style={{color: 'black'}}>About</a>
           </span>
           <span>
-            <a href=''>Careers</a>
+            <a href='' style={{color: 'black'}}>Careers</a>
           </span>
-          <span>Tel: 123-456-7890</span>
-          <span>Email: info@mysite.com</span>
-          <span>500 Terry Francine St San Francisco, CA 94158</span>
+          <span style={{color: 'black'}}>Tel: 123-456-7890</span>
+          <span style={{color: 'black'}}>Email: info@mysite.com</span>
+          <span style={{color: 'black'}}>500 Terry Francine St San Francisco, CA 94158</span>
         </div>
         <div className={styles.autono_form}>
           <form action=''>
-            <h2>SUBSCRIBE</h2>
-            <p>Sign up to receive Autono news and updates.</p>
+            <h2 style={{color: 'black'}}>SUBSCRIBE</h2>
+            <p style={{color: 'black'}}>Sign up to receive Autono news and updates.</p>
             <div className={styles.form_field}>
-              <label htmlFor='email'>Email *</label>
+              <label htmlFor='email' style={{color: 'black'}}>Email *</label>
               <div>
                 <input type='text' />
                 <button type='submit'>Subscribe</button>
@@ -37,7 +37,7 @@ export default function Footer () {
             </div>
             <div>
               <input type='checkbox' />
-              <label htmlFor='checkbox'>
+              <label htmlFor='checkbox' style={{color: 'black'}}>
                 Yes, Subscribe me to your newsletter. *
               </label>
             </div>
@@ -47,7 +47,7 @@ export default function Footer () {
 
       <div className={styles.credit}>
         <div>
-          <p>
+          <p style={{color: 'black'}}>
             &copy; 2025 by Autono. Idea by <span>WIX</span>, Designed by{' '}
             <a
             target='_blank'
@@ -60,16 +60,16 @@ export default function Footer () {
         </div>
         <div className={styles.socials}>
           <div>
-            <FaLinkedin />
+            <FaLinkedin   style={{color: 'black'}}/>
           </div>
           <div>
-            <FaFacebook />
+            <FaFacebook  style={{color: 'black'}}/>
           </div>
           <div>
-            <FaX />
+            <FaX  style={{color: 'black'}}/>
           </div>
           <div>
-            <FaInstagram />
+            <FaInstagram  style={{color: 'black'}}/>
           </div>
         </div>
       </div>
